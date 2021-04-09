@@ -15,7 +15,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TapCommonSDK/PublicHeader.h>
 
-#define TapCommonSDK_VERSION        @"2.0.0"
+#define TapCommonSDK_VERSION        @"2.1.0"
 
 #import <TapCommonSDK/TapConfig.h>
 #import <TapCommonSDK/TDSAccountProvider.h>

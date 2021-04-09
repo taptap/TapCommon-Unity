@@ -100,10 +100,9 @@
 - (nonnull instancetype)initWithURL:(nonnull NSURL *)url protocols:(nullable NSArray*)protocols callbackQueue:(nonnull dispatch_queue_t)callbackQueue connectTimeout:(NSTimeInterval)connectTimeout;
 
 /**
- connect to the host - blocking
- @return YES if successfully connected
+ connect to the host
  */
-- (BOOL)connect;
+- (void)connect;
 
 /**
  disconnect to the host. This sends the close Connection opcode to terminate cleanly.
