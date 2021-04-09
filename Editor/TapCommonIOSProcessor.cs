@@ -50,7 +50,7 @@ namespace TapTap.Common.Editor
             if (TapCommonCompile.HandlerIOSSetting(path,
                 Application.dataPath,
                 "TapCommonResource",
-                "com.tapsdk.common",
+                "com.taptap.tds.common",
                 "Common",
                 new[] {"TapCommonResource.bundle"},
                 target, projPath, proj))
