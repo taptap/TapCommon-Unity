@@ -13,6 +13,7 @@ extern NSString *const TDS_HTTPMETHODKEY;
 extern NSString *const TDS_HTTPBODYKEY;
 extern NSString *const TDS_DATAFORMAT;
 extern NSString *const TDS_CACHE_POLICY_KEY;
+extern NSString *const TDS_PROTOBUF_KEY;
 
 /**
  header
