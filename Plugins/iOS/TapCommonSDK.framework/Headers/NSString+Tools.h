@@ -24,6 +24,5 @@
 - (NSString *)tds_base64Dencode;
 
 /// 是否是空字符串
-- (BOOL)tds_isEmpty;
 + (BOOL)tds_isEmpty:(NSString *)string;
 @end
