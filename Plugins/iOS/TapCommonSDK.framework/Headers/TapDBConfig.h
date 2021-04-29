@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TapDBConfig : NSObject
+@property (nonatomic, assign) BOOL enable;
 @property (nonatomic, copy) NSString *channel;
 @property (nonatomic, copy) NSString *gameVersion;
 @end
