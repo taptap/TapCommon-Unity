@@ -66,7 +66,7 @@ TapCommon.OpenReviewInTapTap(appId,openSuccess =>
 
 #### 6. 在 TapTap IO 打开当前游戏的评论区
 ```c#
-TapCommon.OpenReviewInTapTapGlobal(appId,openSuccess =>
+TapCommon.openReviewInTapGlobal(appId,openSuccess =>
 {
     // true 打开评论区 false 打开失败
 });
