@@ -1,19 +1,8 @@
-# TapTap.Common
-
-### 命名空间
-```c#
-using TapTap.Common;
-```
+## [TapTap.Common](./Documentation/README.md)
 
 ### 接口描述
 
-#### 1.设置语言
-
-```c#
-TapCommon.SetLanguage(string language);
-```
-
-#### 2.获取地区
+#### 1.获取地区
 
 ```c#
 TapCommon.GetRegionCode(isMainland =>

@@ -4,7 +4,7 @@
 
 ### Feature
 
-* Android 新增 TapTap 执行性功能
+* Android 新增 TapTap App 相关支持功能
 * 新增长链接支持 TapTap.Friends
 * 海内外域名切换
 
