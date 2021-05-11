@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDictionary (JSON)
 - (NSString *)tds_jsonString;
+- (NSString *)tds_jsonStringWithoutOptions:(NSJSONWritingOptions)opt;
 @end
 
 NS_ASSUME_NONNULL_END
