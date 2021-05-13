@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIView *loadingView;
 //reload
 @property (nonatomic, strong) UIView *reloadView;
+
+- (void)closeDialog;
 @end
 
 NS_ASSUME_NONNULL_END
