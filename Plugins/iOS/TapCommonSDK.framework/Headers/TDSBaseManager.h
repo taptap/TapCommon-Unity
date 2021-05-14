@@ -9,7 +9,7 @@
 #import <TapCommonSDK/TDSAccount.h>
 
 #define TapCommonSDK @"TapCommon"
-#define TapCommonSDK_VERSION_NUMBER @"20101002"
+#define TapCommonSDK_VERSION_NUMBER @"20101003"
 #define TapCommonSDK_VERSION        @"2.1.1"
 
 NS_ASSUME_NONNULL_BEGIN
