@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 从bundle获取image
 + (UIImage *)getImageFromBundle:(NSString *)bundleName withImage:(NSString *)imageName;
 
+/// 从bundle获取翻译后的文案
++ (NSString *)getTranslatedStringFromCommonWithKey:(NSString *)key;
+
 /// rgb转color
 + (UIColor *)rgbToColorWithRed:(CGFloat)red
                          green:(CGFloat)green
@@ -58,6 +61,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 安全区域（上左下右）
 + (UIEdgeInsets)safeAreaInsets;
+
++ (UIViewController *)findTopViewController;
+
++ (UIViewController *)findUIViewController:(UIViewController *)controller;
 @end
 
 NS_ASSUME_NONNULL_END
