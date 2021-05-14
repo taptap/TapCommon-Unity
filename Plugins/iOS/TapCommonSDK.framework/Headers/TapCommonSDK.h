@@ -20,17 +20,12 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 
 #import <TapCommonSDK/TDSAccount.h>
 #import <TapCommonSDK/TDSAccountProvider.h>
-#import <TapCommonSDK/TDSAccountNotification.h>
-
-#import <TapCommonSDK/ComponentMessageDelegate.h>
 
 #import <TapCommonSDK/TDSDomainManager.h>
 
 #import <TapCommonSDK/TDSGameUtil.h>
 
 #import <TapCommonSDK/TDSAutoLayout.h>
-#import <TapCommonSDK/TDSButton.h>
-#import <TapCommonSDK/TDSCommonDialogView.h>
 #import <TapCommonSDK/TDSCommonEnvironment.h>
 
 #import <TapCommonSDK/EngineBridgeError.h>
@@ -44,7 +39,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSResult.h>
 #import <TapCommonSDK/NSArray+Safe.h>
 #import <TapCommonSDK/NSBundle+Tools.h>
-#import <TapCommonSDK/NSData+Tools.h>
+#import <TapCommonSDK/NSData+JSON.h>
 #import <TapCommonSDK/NSDictionary+JSON.h>
 #import <TapCommonSDK/NSDictionary+TDSSafe.h>
 #import <TapCommonSDK/NSMutableArray+Safe.h>

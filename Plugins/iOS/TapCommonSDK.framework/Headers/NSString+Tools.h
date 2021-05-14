@@ -15,19 +15,16 @@
 - (NSString *)tds_reverse;
 
 // MD5 hash of the file on the filesystem specified by path
-+ (NSString *)tds_stringWithMD5OfFile:(NSString *)path;
++ (NSString *)tds_stringWithMD5OfFile:(NSString *) path;
 // The string's MD5 hash
 - (NSString *)tds_MD5Hash;
 
 // base64
 - (NSString *)tds_base64Encode;
-- (NSString *)tds_base64Decode;
-
-// aes256
-- (NSString *)tds_aes256Encrypt:(NSString *)key;
-- (NSString *)tds_aes256Decrypt:(NSString *)key;
+- (NSString *)tds_base64Dencode;
 
 /// 是否是空字符串
+- (BOOL)tds_isEmpty;
 + (BOOL)tds_isEmpty:(NSString *)string;
 
 - (NSDictionary *)tds_toDictionary;

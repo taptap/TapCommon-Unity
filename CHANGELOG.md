@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2.1.2
+
+* Only the version number changes
+
 ## 2.1.1
 
 ### Feature
