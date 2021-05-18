@@ -32,8 +32,9 @@ namespace TapTap.Common.Editor
             proj.SetBuildProperty(target, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
             proj.SetBuildProperty(target, "SWIFT_VERSION", "5.0");
             proj.SetBuildProperty(target, "CLANG_ENABLE_MODULES", "YES");
+            
             proj.SetBuildProperty(unityFrameworkTarget, "ENABLE_BITCODE", "NO");
-            proj.SetBuildProperty(unityFrameworkTarget, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
+            proj.SetBuildProperty(unityFrameworkTarget, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "NO");
             proj.SetBuildProperty(unityFrameworkTarget, "SWIFT_VERSION", "5.0");
             proj.SetBuildProperty(unityFrameworkTarget, "CLANG_ENABLE_MODULES", "YES");
 
@@ -46,7 +47,7 @@ namespace TapTap.Common.Editor
 
             proj.AddFileToBuild(unityFrameworkTarget,
                 proj.AddFile("usr/lib/libc++.tbd", "libc++.tbd", PBXSourceTree.Sdk));
-            
+
             if (TapCommonCompile.HandlerIOSSetting(path,
                 Application.dataPath,
                 "TapCommonResource",
