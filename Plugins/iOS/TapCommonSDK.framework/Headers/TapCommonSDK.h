@@ -26,7 +26,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 
 #import <TapCommonSDK/TDSDomainManager.h>
 
-#import <TapCommonSDK/TDSGameUtil.h>
+#import <TapCommonSDK/TapGameUtil.h>
 
 #import <TapCommonSDK/TDSAutoLayout.h>
 #import <TapCommonSDK/TDSButton.h>

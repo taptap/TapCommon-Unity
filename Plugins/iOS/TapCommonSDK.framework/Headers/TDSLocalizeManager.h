@@ -11,8 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM (NSInteger, TapLanguageType) {
     TapLanguageType_Auto = 0,// 自动
-    TapLanguageType_zh_Hans,// 简中
+    TapLanguageType_zh_Hans,// 简体中文
     TapLanguageType_en,// 英文
+    TapLanguageType_zh_Hant,// 繁体中文
+    TapLanguageType_ja,// 日文
+    TapLanguageType_ko,// 韩文
+    TapLanguageType_th,// 泰文
+    TapLanguageType_id,// 印度尼西亚语
 };
 
 @interface TDSLocalizeManager : NSObject

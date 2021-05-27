@@ -13,6 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)language:(NSString *)language;
 
 + (void)getRegionCode:(void (^)(NSString *result))callback;
+
++ (void)isTapTapInstalled:(void (^)(NSString *result))callback;
+
++ (void)isTapGlobalInstalled:(void (^)(NSString *result))callback;
+
 @end
 
 NS_ASSUME_NONNULL_END
