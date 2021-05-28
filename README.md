@@ -11,9 +11,7 @@ TapCommon.GetRegionCode(isMainland =>
 });
 ```
 
-### Android 独占方法
-
-#### 1. TapTap 是否安装
+#### 2. TapTap 是否安装
 ```c#
 TapCommon.IsTapTapInstalled(installed =>
 {
@@ -21,7 +19,7 @@ TapCommon.IsTapTapInstalled(installed =>
 });
 ```
 
-#### 2. TapTap IO 是否安装
+#### 3. TapTap IO 是否安装
 ```c#
 TapCommon.IsTapTapGlobalInstalled(installed =>
 {
@@ -29,7 +27,9 @@ TapCommon.IsTapTapGlobalInstalled(installed =>
 });
 ```
 
-#### 3. 在 TapTap 更新游戏
+### Android 独占方法
+
+#### 4. 在 TapTap 更新游戏
 ```c#
 TapCommon.UpdateGameInTapTap(appId,updateSuccess =>
 {
@@ -37,7 +37,7 @@ TapCommon.UpdateGameInTapTap(appId,updateSuccess =>
 });
 ```
 
-#### 4. 在 TapTap IO 更新游戏
+#### 5. 在 TapTap IO 更新游戏
 ```c#
 TapCommon.UpdateGameInTapGlobal(appId,updateSuccess =>
 {
@@ -45,7 +45,7 @@ TapCommon.UpdateGameInTapGlobal(appId,updateSuccess =>
 });
 ```
 
-#### 5. 在 TapTap 打开当前游戏的评论区
+#### 6. 在 TapTap 打开当前游戏的评论区
 ```c#
 TapCommon.OpenReviewInTapTap(appId,openSuccess =>
 {
