@@ -9,8 +9,8 @@
 #import <TapCommonSDK/TDSAccount.h>
 
 #define TapCommonSDK @"TapCommon"
-#define TapCommonSDK_VERSION_NUMBER @"20103001"
-#define TapCommonSDK_VERSION        @"2.1.3"
+#define TapCommonSDK_VERSION_NUMBER @"20104001"
+#define TapCommonSDK_VERSION        @"2.1.4"
 
 NS_ASSUME_NONNULL_BEGIN
 typedef NSString *TDSLanguage NS_STRING_ENUM;

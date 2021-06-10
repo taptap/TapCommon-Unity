@@ -1,10 +1,20 @@
 # ChangeLog
 
+## 2.1.4
+
+### Optimization and fixed bugs
+
+- 优化多语言相关
+
 ## 2.1.3
+
+### New Feature
 
 * iOS 新增 TapTap 以及 Tap.IO 客户端安装判断
 
 ## 2.1.2
+
+### Optimization and fixed bugs
 
 * 修复 iOS ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES 设置问题可能导致的 AppStore 审核无法通过
 
