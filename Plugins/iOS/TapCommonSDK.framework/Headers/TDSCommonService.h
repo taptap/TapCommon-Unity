@@ -10,6 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TDSCommonService : NSObject
+
++ (void)setXUA:(NSString*)json;
+
 + (void)language:(NSString *)language;
 
 + (void)getRegionCode:(void (^)(NSString *result))callback;

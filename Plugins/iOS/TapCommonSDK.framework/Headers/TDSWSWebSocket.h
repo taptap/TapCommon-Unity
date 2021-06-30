@@ -63,7 +63,7 @@
  @param socket is the current socket object.
  @param data   is the binary based data that has been returned.
  */
--(void)websocket:(nonnull TDSWSWebSocket*)socket didReceivePong:(nullable NSDate*)data;
+-(void)websocket:(nonnull TDSWSWebSocket*)socket didReceivePong:(nullable NSData*)data;
 
 @end
 

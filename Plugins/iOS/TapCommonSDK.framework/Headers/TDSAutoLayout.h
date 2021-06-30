@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param constant 距离
 + (NSLayoutConstraint *)layoutViewGreater:(UIView *)view1
                                 attribute:(NSLayoutAttribute)attr1
-                                   toView:(UIView *)view2
+                                   toView:(nullable UIView *)view2
                                 attribute:(NSLayoutAttribute)attr2
                                  constant:(CGFloat)constant;
 
@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param constant 距离
 + (NSLayoutConstraint *)layoutViewLesser:(UIView *)view1
                                attribute:(NSLayoutAttribute)attr1
-                                  toView:(UIView *)view2
+                                  toView:(nullable UIView *)view2
                                attribute:(NSLayoutAttribute)attr2
                                 constant:(CGFloat)constant;
 @end

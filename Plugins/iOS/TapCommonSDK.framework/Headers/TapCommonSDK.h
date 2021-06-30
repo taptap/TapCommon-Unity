@@ -49,6 +49,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/NSDictionary+TDSSafe.h>
 #import <TapCommonSDK/NSMutableArray+Safe.h>
 #import <TapCommonSDK/NSString+Tools.h>
+#import <TapCommonSDK/UIButton+TDSThrottle.h>
 #import <TapCommonSDK/TDSLog.h>
 #import <TapCommonSDK/TDSLoggerService.h>
 #import <TapCommonSDK/TDSNetClient.h>
@@ -58,6 +59,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/NSError+Ext.h>
 #import <TapCommonSDK/TDSAsyncHttp.h>
 #import <TapCommonSDK/TDSCommonHeader.h>
+#import <TapCommonSDK/PlatformXUA.h>
 #import <TapCommonSDK/TDSHttpRequest.h>
 #import <TapCommonSDK/TDSHttpResult.h>
 #import <TapCommonSDK/TDSHttpUtil.h>
@@ -94,7 +96,16 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSThrottle.h>
 #import <TapCommonSDK/TDSDebounce.h>
 #import <TapCommonSDK/TDSLocalizeManager.h>
+
 #import <TapCommonSDK/TDSWSSecurity.h>
 #import <TapCommonSDK/TDSWSWebSocket.h>
+
 #import <TapCommonSDK/TDSTrackerManager.h>
 #import <TapCommonSDK/TDSTrackerConfig.h>
+#import <TapCommonSDK/TDSTrackerEvent.h>
+#import <TapCommonSDK/UserModel.h>
+#import <TapCommonSDK/PageModel.h>
+#import <TapCommonSDK/ActionModel.h>
+#import <TapCommonSDK/NetworkStateModel.h>
+#import <TapCommonSDK/TDSTrackerEvent.h>
+#import <TapCommonSDK/TapLoginLogManager.h>

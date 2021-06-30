@@ -11,6 +11,7 @@
 #import <TapCommonSDK/PageModel.h>
 #import <TapCommonSDK/ActionModel.h>
 #import <TapCommonSDK/NetworkStateModel.h>
+#import <TapCommonSDK/TDSTrackerEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,11 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)registerTracker:(TDSTrackerConfig *)trackerConfig;
 
-- (void)trackerWithType:(TDSTrackerType)trackerType
-              userModel:(nullable UserModel *)userModel
-              pageModel:(nullable PageModel *)pageModel
-            actionModel:(nullable ActionModel *)actionModel
-           networkModel:(nullable NetworkStateModel *)networkModel;
+- (void)trackWithEvent:(TDSTrackerEvent *)event;
 
 @end
 
