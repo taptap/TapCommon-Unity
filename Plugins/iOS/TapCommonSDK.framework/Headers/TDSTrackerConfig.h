@@ -11,7 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef enum : NSUInteger {
     TDSTrackerForTapsdk = 1,
     TDSTrackerForFriends,
-    TDSTrackerForNetwork
+    TDSTrackerForNetwork,
+    TDSTrackerForTapSDKNetwork
 } TDSTrackerType;
 
 @interface TDSTrackerConfig : NSObject

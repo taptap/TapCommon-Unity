@@ -1,5 +1,11 @@
 # ChangeLog
 
+## 2.1.6
+
+### BreakingChanges
+
+- 修改 **TapCommon.OpenReviewInTapGlobal()** 方法命名 
+
 ## 2.1.5
 
 ### Optimization and fixed bugs
