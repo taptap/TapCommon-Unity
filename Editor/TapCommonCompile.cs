@@ -45,7 +45,8 @@ namespace TapTap.Common.Editor
             return string.IsNullOrEmpty(target);
         }
 
-        public static bool HandlerIOSSetting(string path, string appDataPath, string resourceName, string modulePackageName,
+        public static bool HandlerIOSSetting(string path, string appDataPath, string resourceName,
+            string modulePackageName,
             string moduleName, string[] bundleNames, string target, string projPath, PBXProject proj)
         {
             var resourcePath = Path.Combine(path, resourceName);
@@ -98,9 +99,9 @@ namespace TapTap.Common.Editor
                 Debug.LogError($"Can't Find {bundleNames}");
                 return false;
             }
-            
+
             TapFileHelper.CopyAndReplaceDirectory(tdsResourcePath, resourcePath);
-            
+
             foreach (var name in bundleNames)
             {
                 proj.AddFileToBuild(target,
@@ -120,8 +121,8 @@ namespace TapTap.Common.Editor
             plist.ReadFromString(File.ReadAllText(plistPath));
             var rootDic = plist.root;
 
-           var items = new List<string>
-           {
+            var items = new List<string>
+            {
                 "tapsdk",
                 "tapiosdk",
             };
@@ -147,9 +148,10 @@ namespace TapTap.Common.Editor
                 }
                 else
                 {
-                    rootDic.SetString(item.Key.ToString(), item.Value.ToString());
+                    rootDic.SetString(item.Key, item.Value.ToString());
                 }
             }
+
             //添加url
             var dict = plist.root.AsDict();
             var array = dict.CreateArray("CFBundleURLTypes");
@@ -157,12 +159,12 @@ namespace TapTap.Common.Editor
             dict2.SetString("CFBundleURLName", "TapTap");
             var array2 = dict2.CreateArray("CFBundleURLSchemes");
             array2.AddString(taptapId);
-                
+
             Debug.Log("TapSDK change plist Success");
             File.WriteAllText(plistPath, plist.WriteToString());
             return true;
         }
-            
+
         public static string GetValueFromPlist(string infoPlistPath, string key)
         {
             if (infoPlistPath == null)
