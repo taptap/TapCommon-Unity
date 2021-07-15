@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 2.1.7
+
+### None
+
 ## 2.1.6
 
 ### BreakingChanges

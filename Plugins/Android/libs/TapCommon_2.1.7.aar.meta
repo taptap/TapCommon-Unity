@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/LCLibs/Common.dll.meta
+guid: 6c5e054f629d44a83956237f550da969
+=======
+guid: fdfc96aff59854a6dbea47d109e204e1
+>>>>>>> develop/2.x:Assets/TapTap/Common/Plugins/Android/libs/TapCommon_2.1.7.aar.meta
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
