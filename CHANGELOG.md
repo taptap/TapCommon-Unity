@@ -1,5 +1,11 @@
 # ChangeLog
 
+## 3.0.0
+
+### Optimization
+
+- Bridge 新增 Task 桥接
+
 ## 2.1.7
 
 ### None
@@ -8,7 +14,7 @@
 
 ### BreakingChanges
 
-- 修改 **TapCommon.OpenReviewInTapGlobal()** 方法命名 
+- 修改 **TapCommon.OpenReviewInTapGlobal()** 方法命名
 
 ## 2.1.5
 

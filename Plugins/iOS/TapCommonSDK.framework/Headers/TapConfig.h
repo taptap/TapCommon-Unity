@@ -17,7 +17,8 @@ typedef NS_ENUM (NSInteger, TapSDKRegionType) {
 
 @interface TapConfig : NSObject
 @property (nonatomic, copy) NSString *clientId;
-@property (nonatomic, copy) NSString *clientSecret;
+@property (nonatomic, copy) NSString *clientToken;
+@property (nonatomic, copy) NSString *serverURL;
 @property (nonatomic, assign) TapSDKRegionType region;
 @property (nonatomic, strong) TapDBConfig * dbConfig;
 @end

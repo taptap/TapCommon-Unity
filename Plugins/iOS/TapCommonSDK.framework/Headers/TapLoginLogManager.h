@@ -35,14 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)logTapCancel;
 
-+ (void)logTdsStart;
-
-+ (void)logTdsSuccessWithOpenID:(NSString *)openId accountProvider:(id<TDSAccountProvider>)provider isRefresh:(BOOL)isRefresh ;
-
-+ (void)logTdsFailWithError:(NSError *)error;
-
-+ (void)logTdsCancel;
-
 @end
 
 NS_ASSUME_NONNULL_END
