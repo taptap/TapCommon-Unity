@@ -13,7 +13,8 @@ typedef NS_ENUM (NSInteger, TDSAccountType) {
     TAP,
     XD,
     XDG,
-    TYPE_TDS
+    TYPE_TDS,
+    LC
 };
 
 @interface TDSAccount : NSObject
@@ -28,8 +29,14 @@ typedef NS_ENUM (NSInteger, TDSAccountType) {
 @property (nonatomic, copy, readonly) NSString *macAlgorithm;
 /// tds
 @property (nonatomic, assign, readonly) long expireIn;
+/// lc
+@property (nonatomic, copy, readonly) NSString *clientId;
+@property (nonatomic, copy, readonly) NSString *clientToken;
+@property (nonatomic, copy, readonly) NSString *sessionToken;
 
 - (instancetype)initWithToken:(NSString *)token type:(TDSAccountType)type;
+
+- (instancetype)initWithLC:(NSString *)token type:(TDSAccountType)type;
 
 - (TDSAccountType)getAccountType;
 

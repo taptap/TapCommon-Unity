@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)base64HMacSha1WithSecret:(NSString *)secret
                             signString:(NSString *)signString;
 
++ (NSString *)getLcSignWithClientKey:(NSString *)clientKey;
+
 + (NSString *)getMacToken:(NSString *)url
      method:(NSString *)method
     oauthID:(NSString *)oauthID
