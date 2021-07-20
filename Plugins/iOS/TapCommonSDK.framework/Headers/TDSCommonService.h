@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)setXUA:(NSString*)json;
 
-+ (void)language:(NSString *)language;
-
 + (void)getRegionCode:(void (^)(NSString *result))callback;
 
 + (void)isTapTapInstalled:(void (^)(NSString *result))callback;
 
 + (void)isTapGlobalInstalled:(void (^)(NSString *result))callback;
+
++ (void)preferredLanguage:(NSNumber *)language;
 
 @end
 
