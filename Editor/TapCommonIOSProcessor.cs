@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEditor.iOS.Xcode;
@@ -32,7 +33,7 @@ namespace TapTap.Common.Editor
             proj.SetBuildProperty(target, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
             proj.SetBuildProperty(target, "SWIFT_VERSION", "5.0");
             proj.SetBuildProperty(target, "CLANG_ENABLE_MODULES", "YES");
-            
+
             proj.SetBuildProperty(unityFrameworkTarget, "ENABLE_BITCODE", "NO");
             proj.SetBuildProperty(unityFrameworkTarget, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "NO");
             proj.SetBuildProperty(unityFrameworkTarget, "SWIFT_VERSION", "5.0");

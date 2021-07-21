@@ -14,7 +14,7 @@ typedef NS_ENUM (NSInteger, TDSAccountType) {
     XD,
     XDG,
     TYPE_TDS,
-    LC
+LC
 };
 
 @interface TDSAccount : NSObject

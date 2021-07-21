@@ -110,3 +110,5 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/NetworkStateModel.h>
 #import <TapCommonSDK/TDSTrackerEvent.h>
 #import <TapCommonSDK/TapLoginLogManager.h>
+
+#import <TapCommonSDK/TapPropertiesHolder.h>
