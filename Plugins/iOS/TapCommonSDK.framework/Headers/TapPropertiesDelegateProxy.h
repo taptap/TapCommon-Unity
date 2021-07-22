@@ -13,7 +13,7 @@ typedef const char* _Nullable (*TapPropertiesDelegate)(const char*);
 
 @interface TapPropertiesDelegateProxy : NSObject
 
-- (instancetype)initWithDelegate: (TapPropertiesDelegate)delegate key:(const char*)key;
+- (instancetype)initWithDelegate: (TapPropertiesDelegate)delegate key:(NSString*)key;
 
 - (NSString*) getProperties;
 
