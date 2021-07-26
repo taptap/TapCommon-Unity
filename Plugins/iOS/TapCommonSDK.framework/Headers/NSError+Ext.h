@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSError (Ext)
 + (instancetype)errorWithMessage:(NSString *)errorMsg code:(NSInteger)code;
+
++ (instancetype)errorWithContent:(NSString *)content message:(NSString *)message code:(NSInteger)code;
 @end
 
 NS_ASSUME_NONNULL_END
