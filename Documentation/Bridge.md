@@ -60,7 +60,7 @@ public class TestService implementation TestService {
 +(void) testMethodWithCallback:(void (^)(NSString *result))callback;
 
 // 匹配的是 Android 中 testMethodWithArgsAndCallback 方法
-+(void) args1:(NSString*) args2:(NSNumber*) bridgeCallback:(void (^)(NSString *result))callback;
++(void) args1:(NSString*)args1 args2:(NSNumber*)args2 bridgeCallback:(void (^)(NSString *result))callback;
 
 @end
 ```
@@ -74,7 +74,7 @@ public class TestService implementation TestService {
     callback(@"testMethodWithCallback 回调给 Unity 的参数");
 }
 
-+(void) args1:(NSString*) args2:(NSNumber*) bridgeCallback:(void (^)(NSString *result))callback{
++(void) args1:(NSString*)args1 args2:(NSNumber*)args2 bridgeCallback:(void (^)(NSString *result))callback{
     callback(@"testMethodWithArgsAndCallback 回调给 Unity 的参数");
 }
 
@@ -123,9 +123,9 @@ Unity Thread -> Native MainThread -> Execute Function -> Unity Thread
  EngineBridge.GetInstance().CallHandler(command);
 ```
 
-## 二、Android 、iOS 调用 Unity 
+## 二、Android 、iOS 调用 Unity
 
-鉴于 TapSDK 3.1.+ 之后，Android 与 iOS 需要同步 `TapBootstrap` 中 `TDSUser` 的部分参数，所以 `TapCommon` 在当前版本支持了原生调用 Unity 接口。
+鉴于 TapSDK 3.1.+ 之后，Android 与 iOS 需要同步 `TapBootstrap` 中 `TDSUser` 的部分参数，所以 `TapCommon` 在当前版本支持了原生简单的调用 Unity 接口。
 
 以下以 Android、iOS 需要 Unity 提供 `sessionToken` 以及 `objectId` 为例
 
@@ -135,27 +135,39 @@ Unity Thread -> Native MainThread -> Execute Function -> Unity Thread
 public class SessionTokenProxy:ITapPropertiesProxy{
 
     public string GetProperties(){
-       return "kafjaskldfjasjdhfajkdfajdfas";
+       return "sessionToken-kafjaskldfjasjdhfajkdfajdfas";
     }
 
 }
 
+public class ObjectIdProxy:ITapPropertiesProxy {
+    
+    public string GetProperties(){
+        return "objectId-dafasdfad";
+    }
+    
+}
+
 // 通过 TapCommon 注册 Native 需要调用的接口
 TapCommon.RegisterProperties("sessionToken",new SessionTokenProxy());
+
+TapCommon.RegisterProperties("objectid",new ObjectIdProxy());
 ```
 
 ### Android、iOS 调用 Unity 实现的 ITapPropertiesProxy 来获取所需要的值
 
-Android 获取 `sessionToken`
+Android 获取 `sessionToken` 以及 `objectId`
 
 ```java
 String sessionToken = TapPropertiesHolder.INSTANCE.getProperty("sessionToken");
+String objectId = TapPropertiesHolder.INSTANCE.getProperty("objectId");
 ```
 
-iOS 获取 `sessionToken`
+iOS 获取 `sessionToken` 以及 `objectId`
 
 ```objectivec
 NSString* sessionToken = [[TapPropertiesHolder shareInstance] getProperty:@"sessionToken"];
+NSString* objectId = [[TapPropertiesHolder shareInstance] getProperty:@"objectId"];
 ```
 
 
