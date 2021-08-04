@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)preferredLanguage:(NSNumber *)language;
 
++ (void)hostToBeReplaced:(NSString*)host replacedHost:(NSString*) replaceHost;
+
 @end
 
 NS_ASSUME_NONNULL_END

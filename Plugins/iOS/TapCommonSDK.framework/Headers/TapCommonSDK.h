@@ -31,7 +31,6 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSAutoLayout.h>
 #import <TapCommonSDK/TDSButton.h>
 #import <TapCommonSDK/TDSCommonDialogView.h>
-#import <TapCommonSDK/TDSCommonEnvironment.h>
 
 #import <TapCommonSDK/EngineBridgeError.h>
 #import <TapCommonSDK/TDSBridge.h>
@@ -112,3 +111,4 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TapLoginLogManager.h>
 
 #import <TapCommonSDK/TapPropertiesHolder.h>
+#import <TapCommonSDK/TDSHostReplaceUtil.h>
