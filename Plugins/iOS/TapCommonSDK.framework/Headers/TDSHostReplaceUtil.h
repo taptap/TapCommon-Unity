@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)clear;
 
 - (NSString *)getReplacedHost:(NSString *)originalHost;
-
-- (BOOL)isTestMode;
 @end
 
 NS_ASSUME_NONNULL_END
