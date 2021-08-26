@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TDSCommonService : NSObject
 
++ (void)initWithConfig:(NSString*)configJSON versionName:(NSString*)versionName;
+
 + (void)setXUA:(NSString*)json;
 
 + (void)getRegionCode:(void (^)(NSString *result))callback;
