@@ -1,10 +1,12 @@
 # ChangeLog
 
+## 3.2.0
+
+- Native Update
+
 ## 3.1.0
 
-### Dependencies
-
-- TapTap.Common v3.1.0
+- Native Update
 
 ## 3.0.0
 
