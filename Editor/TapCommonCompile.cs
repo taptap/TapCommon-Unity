@@ -1,3 +1,4 @@
+#if UNITY_IOS
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -177,3 +178,4 @@ namespace TapTap.Common.Editor
         }
     }
 }
+#endif
