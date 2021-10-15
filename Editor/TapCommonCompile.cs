@@ -126,7 +126,12 @@ namespace TapTap.Common.Editor
                 "tapsdk",
                 "tapiosdk",
             };
-            var plistElementList = rootDic.CreateArray("LSApplicationQueriesSchemes");
+
+            if (!(rootDic["LSApplicationQueriesSchemes"] is PlistElementArray plistElementList))
+            {
+                plistElementList = rootDic.CreateArray("LSApplicationQueriesSchemes");
+            }
+
             foreach (var t in items)
             {
                 plistElementList.AddString(t);
@@ -154,7 +159,11 @@ namespace TapTap.Common.Editor
 
             //添加url
             var dict = plist.root.AsDict();
-            var array = dict.CreateArray("CFBundleURLTypes");
+            if (!(dict["CFBundleURLTypes"] is PlistElementArray array))
+            {
+                array = dict.CreateArray("CFBundleURLTypes");
+            }
+            
             var dict2 = array.AddDict();
             dict2.SetString("CFBundleURLName", "TapTap");
             var array2 = dict2.CreateArray("CFBundleURLSchemes");
