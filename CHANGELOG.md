@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 3.3.0
+
+- Native Update
+
 ## 3.2.0
 
 - Native Update
