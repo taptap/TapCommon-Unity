@@ -94,6 +94,8 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/UIView+Toast.h>
 #import <TapCommonSDK/TDSThrottle.h>
 #import <TapCommonSDK/TDSDebounce.h>
+#import <TapCommonSDK/TDSCommonUtils.h>
+#import <TapCommonSDK/TDSNetworkTypeUtil.h>
 #import <TapCommonSDK/TDSLocalizeManager.h>
 #import <TapCommonSDK/TDSLocalizeUtil.h>
 
