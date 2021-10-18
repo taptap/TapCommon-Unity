@@ -23,7 +23,7 @@ TapCommon.IsTapTapInstalled(installed =>
 #### 3. TapTap IO 是否安装
 
 ```c#
-TapCommon.IsTapTapGlobalInstalled(installed =>
+TapCommon.IsTapGlobalInstalled(installed =>
 {
     // true 安装  false 未安装
 });
