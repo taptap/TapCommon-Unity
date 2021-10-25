@@ -1,17 +1,13 @@
 # ChangeLog
 
+## 3.3.1
+- Native Package Update
 ## 3.3.0
-
-- Native Update
-
+- Native Package Update
 ## 3.2.0
-
-- Native Update
-
+- Native Package Update
 ## 3.1.0
-
-- Native Update
-
+- Native Package Update
 ## 3.0.0
 
 ### Optimization
