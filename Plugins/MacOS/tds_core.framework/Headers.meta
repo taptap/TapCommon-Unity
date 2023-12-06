@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TapTap/Common/Plugins/MacOS/tds_core.framework/Headers.meta
+guid: b4c5780f0f0c442ba9e048b30e3a25fc
+========
+guid: 28c5ee5fa1ba94d9a8343d3614d34cef
+>>>>>>>> feat/xd-tap-login:Assets/TapTap/Common/Plugins/MacOS/tds_core.framework/Resources.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
