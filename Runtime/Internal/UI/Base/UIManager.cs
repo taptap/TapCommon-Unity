@@ -65,7 +65,7 @@ namespace TapTap.UI
         public static Texture TapTapToastIcon {
             get {
                 if (taptapToastIcon == null)
-                    taptapToastIcon = Resources.Load<Texture>("TapSDKCommonTapIcon");
+                    taptapToastIcon = Resources.Load<Texture>("TapSDKCommonTapIcon-v2");
                 return taptapToastIcon;
             }
         }

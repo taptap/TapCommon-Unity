@@ -7,8 +7,8 @@ using UnityEngine;
 
 namespace TapTap.Common {
     public class TapCommon {
-        public static readonly string SDKVersion = "3.26.5";
-        public static readonly int SDKVersionCode = 32600005;
+        public static readonly string SDKVersion = "3.27.0";
+        public static readonly int SDKVersionCode = 32700000;
 
         private static TapConfig config;
 
