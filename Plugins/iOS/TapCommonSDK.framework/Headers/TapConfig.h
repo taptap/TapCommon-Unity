@@ -23,7 +23,6 @@ typedef NS_ENUM (NSInteger, TapSDKRegionType) {
 @property (nonatomic, assign) TapSDKRegionType region;
 @property (nonatomic, strong) TapDBConfig * dbConfig;
 @property (nonatomic, strong) TapBillboardConfig *tapBillboardConfig;
-
 @end
 
 NS_ASSUME_NONNULL_END

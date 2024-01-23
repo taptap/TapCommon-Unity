@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEditor;
-# if UNITY_IOS
 using UnityEditor.Callbacks;
+# if UNITY_IOS
 using UnityEditor.iOS.Xcode;
 #endif
 using UnityEngine;
@@ -51,9 +51,6 @@ namespace TapTap.Common.Editor
 
             proj.AddFileToBuild(unityFrameworkTarget,
                 proj.AddFile("usr/lib/libc++.tbd", "libc++.tbd", PBXSourceTree.Sdk));
-
-            proj.AddFileToBuild(unityFrameworkTarget,
-                proj.AddFile("usr/lib/libsqlite3.tbd", "libsqlite3.tbd", PBXSourceTree.Sdk));
 
             if (TapCommonCompile.HandlerIOSSetting(path,
                 Application.dataPath,

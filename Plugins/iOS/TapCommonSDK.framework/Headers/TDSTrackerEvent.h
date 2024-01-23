@@ -15,20 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
-@protocol TDSTrackerEventProtocol <NSObject>
-
-@required
-
-- (TDSTrackerType)trackerType;
-
-- (NSDictionary *)getEventDic;
-
-
-@end
-
-
-@interface TDSTrackerEvent : NSObject <TDSTrackerEventProtocol>
+@interface TDSTrackerEvent : NSObject
 //事件类型
 @property (nonatomic, assign) TDSTrackerType trackerType;
 

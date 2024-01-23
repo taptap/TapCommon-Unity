@@ -6,20 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TapCommonSDK/TapConfig.h>
+#import <TapCommonSDK/TDSAccount.h>
 
 #define TapCommonSDK @"TapCommon"
-#define TapCommonSDK_VERSION_NUMBER @"32301001"
-#define TapCommonSDK_VERSION        @"3.23.1"
+#define TapCommonSDK_VERSION_NUMBER @"31602001"
+#define TapCommonSDK_VERSION        @"3.16.2"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TDSBaseManager : NSObject
-
-+ (TDSBaseManager *)shareInstance;
-+ (void)setDurationStatisticsEnabled:(BOOL)enable;
-+ (void)initWithSDKConfig:(TapConfig *)config;
-+ (TapConfig *)getConfig;
 
 @end
 

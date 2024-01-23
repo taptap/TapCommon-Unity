@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TapBillboardConfig : NSObject
 @property (nonatomic, copy) NSSet<NSArray *> *diemensionSet;
-@property (nonatomic, copy) NSString *templateType __attribute__((deprecated("useless in other interface")));
+@property (nonatomic, copy) NSString *templateType;
 @property (nonatomic, copy) NSString *serverUrl;
 
 @end
