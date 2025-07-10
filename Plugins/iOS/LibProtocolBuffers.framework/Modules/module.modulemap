@@ -1,0 +1,6 @@
+framework module LibProtocolBuffers {
+  umbrella header "LibProtocolBuffers.h"
+  export *
+
+  module * { export * }
+}
